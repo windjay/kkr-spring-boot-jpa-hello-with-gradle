@@ -17,7 +17,7 @@ public class HelloApplicationTests {
 
     @Test
     public void save() {
-        userRepository.save(new User("windjay1", "1111", "최재철"));
+        userRepository.save(new User("windjay1", "1111", "windjay"));
     }
 
 }

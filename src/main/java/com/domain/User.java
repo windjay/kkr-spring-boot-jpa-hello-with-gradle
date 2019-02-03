@@ -1,5 +1,6 @@
 package com.domain;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import javax.persistence.Entity;
@@ -9,6 +10,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name="users")
 @Data
+@AllArgsConstructor
 public class User {
     @Id
     String id;
@@ -18,10 +20,10 @@ public class User {
     public User() {
     }
 
-    public User(String id, String password, String name) {
-        this.id = id;
-        this.password = password;
-        this.name = name;
-    }
+//    public User(String id, String password, String name) {
+//        this.id = id;
+//        this.password = password;
+//        this.name = name;
+//    }
 
 }
